@@ -1,0 +1,30 @@
+.footer {
+  padding: 20px;
+  background-color: var(--color-black-dark-light);
+  margin-top: 20px;
+  &_img {
+    width: 100px;
+    margin: 10px auto;
+    & img {
+      max-width: 100%;
+    }
+  }
+  &_link {
+    margin: 20px 0;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+
+      & li {
+        color: var(--white);
+        text-transform: capitalize;
+        text-decoration: none;
+        display: block;
+        font-size: 21px;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.genreSide {
+  background-color: var(--whitelight);
+  margin-top:10px;
+  padding: 10px;
+  @media (min-width: 1020px) {
+    /* margin-top: 150px; */
+    background-color: transparent;
+    margin-left: 20px;
+  }
+
+  &_head {
+    margin-bottom: 10px;
+    & h2 {
+      font-family: var(--fontFamily-bitter);
+      font-weight: 900;
+      color: black;
+      text-transform: capitalize;
+      border-left: 5px solid yellow;
+      padding: 5px 13px;
+      font-size: 32px;
+    }
+    & h3 {
+      text-transform: capitalize;
+      margin-top: 20px;
+      font-size: 25px;
+      font-family: var(--fontFamily-bitter);
+      letter-spacing: 2px;
+    }
+  }
+  &_body {
+    a {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 5px;
+      font-family: var(--fontFamily-bitter);
+      text-decoration: none;
+      text-transform: capitalize;
+      color: black;
+      font-size: 28px;
+      margin: 20px 0;
+
+      & .genreSide_body-main {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      & .p {
+        font-size: 18px;
+        margin-top: 5px;
+      }
+    }
+  }
+  &_genre {
+    &-head {
+      & h2 {
+        text-transform: capitalize;
+        font-family: var(--fontFamily-bitter);
+        margin: 20px 5px;
+        font-weight: 900;
+        color: black;
+        font-size: 25px;
+      }
+    }
+    &-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+        border: 1px solid rgb(114, 110, 110);
+        padding: 7px;
+        display: block;
+        letter-spacing: 2px;
+        text-align: center;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+
+        &:hover {
+          background-color: rgb(207, 207, 216);
+        }
+      }
+    }
+  }
+}
+
+.active {
+  & .genreSide_body-main {
+    & p {
+      color: yellow;
+    }
+  }
+}

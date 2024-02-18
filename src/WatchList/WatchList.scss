@@ -1,0 +1,122 @@
+.watchlist {
+  padding: 10px;
+  background-color: var(--white);
+  margin-top: 25px;
+  position: relative;
+  
+  @media(min-width:1020px)
+  {
+
+  
+} 
+
+ &_header {
+    padding: 20px 15px;
+
+    background-color: var(--whitelight);
+    @media(min-width:1020px){
+    width: 1200px;
+    margin: 0 auto;
+    }
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &-left {
+        & h1 {
+          color: var(--color-black-dark);
+          font-weight: 400;
+          font-family: var(--fontFamily-bitter);
+           border-left: 4px solid var(--text-primary-yellow);
+           padding: 0 10px;
+        }
+        & h3 {
+          color: var(--color-black-dark-light);
+          font-weight: var(--fontWeightThin);
+          font-family: var(--fontFamily-lato);
+          text-transform: uppercase;
+        }
+      }
+      &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+
+        & span {
+          font-weight: var(--fontWeight);
+          margin-left: 7px;
+          font-size: 15px;
+          & .movie {
+            color: var(--text-primary-yellow);
+          }
+        }
+      }
+    }
+  }
+
+  &_body {
+    background-color: var(--whitelight-body);
+    margin-top: 5px;
+    @media(min-width:1020px){
+      width: 1200px;
+      margin: 0 auto;
+    }
+    &-list {
+      & ul {
+        & li {
+          border-bottom: 1px solid var(--color-black-dark-light);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 5px;
+          & .watchlist_body-list-main {
+            display: flex;
+            justify-content: flex-start;
+            gap: 17px;
+
+            & img {
+              width: 90px;
+            }
+            &-disc {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 3px;
+            & h2{
+              font-family: var(--fontFamily-bitter);
+              font-size: 17px;
+              
+            }
+            & .para{
+
+              & p{
+                width: 60vw;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+              }
+            }
+         
+              & div {
+                & span {
+                  margin-right: 10px;
+                  font-family: var(--fontFamily-bitter);
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+          & button {
+            all: unset;
+          }
+        }
+      }
+    }
+  }
+}
+.star{
+  margin-right: 7px;
+}

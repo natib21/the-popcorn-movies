@@ -1,0 +1,94 @@
+.videoHead {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  &_title {
+    & h1 {
+      text-transform: capitalize;
+      font-family: var(--fontFamily-bitter);
+      padding-left: 20px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      margin-bottom: 2px;
+      text-transform: capitalize;
+      font-weight: 500;
+      @media (min-width: 600px) {
+        font-size: 33px;
+      }
+      @media (min-width: 1020px) {
+        font-size: 40px;
+        margin: 0 60px;
+        display: inline;
+        font-weight: 900;
+      }
+    }
+    & p {
+      margin-top: 10px;
+      font-weight: 200;
+      text-transform: capitalize;
+      padding-left: 20px;
+      font-family: sans-serif;
+      letter-spacing: 2px;
+      @media (min-width: 1020px) {
+        margin: 5px 60px;
+        font-size: 18px;
+        font-weight: 600;
+        color: gray;
+      }
+    }
+  }
+  &_rate {
+    display: none;
+    @media (min-width: 1020px) {
+      display: block;
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+      margin-right: 60px;
+
+      &-imdb {
+        & h1 {
+          font-size: 10px;
+          font-family: var(--fontFamily-bitter);
+          letter-spacing: 2px;
+          color: rgb(175, 172, 172);
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+        &-place {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          &-pt {
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+
+            & .num {
+              display: flex;
+              align-items: center;
+              & h3 {
+                font-family: var(--fontFamily-bitter);
+                font-weight: 800;
+                font-size: 15px;
+                letter-spacing: 2px;
+              }
+              & span {
+                color: rgb(175, 172, 172);
+                font-family: "Courier New", Courier, monospace;
+              }
+            }
+            & h5 {
+              font-family: var(--fontFamily-bitter);
+              letter-spacing: 2px;
+              font-size: 12px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Lato:ital,wght@1,300&family=Roboto:ital,wght@1,100;1,400&display=swap");
+:root {
+  --background-bg-primary: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  --black: #000;
+  --black-hover: rgb(58, 57, 57);
+  --white: #fff;
+  --text-primary-yellow: #f6eb0f;
+  --text-primary-yellow-hover: #f6eb0fb2;
+  --button-color: linear-gradient(to top, #09203f 0%, #537895 100%);
+  --button-color-hover: linear-gradient(to left, #09203f 0%, #537895 100%);
+  --color-black-dark: #0e0e13;
+  --color-black-dark-light: #1c1c1f;
+  --color-black-dark-light-plus: #504f52;
+  --fontWeight: bolder;
+  --fontWeightThin: 200;
+  --whitelight: #ececec;
+  --whitelight-body: #f0f1f8;
+  --fontFamily-roboto: "Roboto", sans-serif;
+  --fontFamily-lato: "Lato", sans-serif;
+  --fontFamily-bitter: "Bitter", sans-serif;
+  --background-stripe: repeating-linear-gradient(
+    -55deg,
+    rgba(0, 0, 0, 0.2),
+    var(--color-black-dark-light) 10px,
+    #222 5px,
+    #222 20px
+  );
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow: scroll;
+}
+body {
+  background-color: #000;
+  position: relative;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgb(12, 12, 12);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #fffbfb;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+}

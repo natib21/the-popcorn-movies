@@ -1,0 +1,25 @@
+.videopage {
+
+  color: #fff;
+
+  background-image: linear-gradient(
+    100deg,
+    #000000 0%,
+    #3a3a38 50%,
+    #000000 100%
+  );
+  padding: 5px 0;
+  @media (min-width: 450px) {
+  }
+  @media (min-width: 600px) {
+    padding: 5px 0;
+  }
+  @media(min-width:1020px){
+
+  
+  }
+  @media(min-width:1200px){
+    width: 1350px;
+    margin: 0 auto;
+  }
+}
